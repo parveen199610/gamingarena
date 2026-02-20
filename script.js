@@ -1,3 +1,19 @@
+window.onload = function(){
+
+let player="Guest";
+let modal=document.getElementById("modal");
+let area=document.getElementById("gameArea");
+
+function saveName(){
+player=document.getElementById("playerName").value||"Guest";
+alert("Welcome "+player);
+}
+
+function closeGame(){
+modal.style.display="none";
+area.innerHTML="";
+}
+
 alert("JS Working");
 let player="Guest";
 let modal=document.getElementById("modal");
@@ -128,4 +144,5 @@ setTimeout(()=>{
 updateLeaderboard("Catch",score);
 alert("Score: "+score);
 },10000);
+}
 }
