@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ultimate Gaming Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>🔥 Ultimate Gaming Portal</h1>
+<input type="text" id="playerName" placeholder="Enter Your Name">
+<button onclick="saveName()">Save</button>
+<button onclick="toggleMusic()">🎵 Music</button>
+</header>
+
+<div class="grid">
+<div class="card" onclick="openSnake()">🐍 Snake</div>
+<div class="card" onclick="openTic()">❌ Tic Tac Toe</div>
+<div class="card" onclick="openMemory()">🧠 Memory</div>
+<div class="card" onclick="openReaction()">⚡ Reaction</div>
+<div class="card" onclick="openCatch()">🎯 Catch Box</div>
+</div>
+
+<div id="leaderboard"></div>
+
+<div id="modal" class="modal">
+<div class="content">
+<span onclick="closeGame()" class="close">×</span>
+<div id="gameArea"></div>
+</div>
+</div>
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
