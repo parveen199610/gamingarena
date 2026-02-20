@@ -1,3 +1,4 @@
+alert("JS Working");
 let player="Guest";
 let modal=document.getElementById("modal");
 let area=document.getElementById("gameArea");
